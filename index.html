@@ -75,11 +75,30 @@ margin-top:-50px;">
 <p>
 <hr>
 <br>
-<a href="bolg.html" class="cta">Good afternoon</a>
+<a id="truman" href="bolg.html" class="cta">Good evening</a>
 <br><br>
 <hr>
 </p>
 </div>
+<script>
+var myTime = new Date();
+var current_hour = myTime.getHours();//小时数0-23
+function showTime_text(hour){
+if(hour >= 5 && hour < 12){
+document.getElementById('truman').innerText = 'Good morning';
+}
+else if(hour >=12 && hour < 18){
+document.getElementById('truman').innerText = 'Good afternoon';
+}
+else if(hour>=18 && hour<23){
+document.getElementById('truman').innerText = 'Good evening';
+}
+else{
+document.getElementById('truman').innerText = 'Good night';
+}
+}
+showTime_text(current_hour);
+</script>
 
 <script type="text/javascript">
 var $cta = $('.cta');
@@ -99,6 +118,7 @@ var createBtnsMarkup = function createBtnsMarkup() {
 	});
 };
 window.onLoad = createBtnsMarkup();
+
 </script>
 
 </body>
