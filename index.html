@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>懒懒 & 阿涛</title>
@@ -12,56 +13,58 @@
 <script src="js/jquery.min.js"></script>
 
 <link rel="stylesheet" href="css/style.css">
+
 </head>
 
-<body>
-
+<body style="text-align: center;
+  background: #032b39;
+  height: 100vh;">
 <!--背景-->
 <ul class="shadows">
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
 </ul>
 <ul class="drive">
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
 </ul>
 
 <div id="main" >
-	<div class="text">LanLan Tao</div>
+    <div class="text">LanLan Tao</div>
 </div>
 <script>
-//选择元素
-var el = document.querySelector('.text');
-//每个选项可以定义为单个也可以定义为数组
-var options = {
-    size: 200,         // 字体大小，决定文字的高度，px
-    weight: 10,         // 粗体，px
-    rounded: false,    // 字母结尾圆角
-    color: ['#f90','#5F6062','#f11','#f22'],  // 字体颜色
-    duration: 1,       // 每个字母的动画展示时长 (seconds)
-    delay: [0, 0.1],  // 每个字母间的动画延时
-    fade: 0.5,         // 渐显效果的时长(seconds)
-    easing: d3_ease.easeCubicInOut.ease,   // 缓冲动画效果
-    individualDelays: false     // 默认false，如果设置成false，则动画效果会从左到右过度展示，如果是true，字母动画效果是同步展示
-};
-var myText = new Letters(el, options);
-myText.show();
+    //选择元素
+    var el = document.querySelector('.text');
+    //每个选项可以定义为单个也可以定义为数组
+    var options = {
+        size: 200,         // 字体大小，决定文字的高度，px
+        weight: 10,         // 粗体，px
+        rounded: false,    // 字母结尾圆角
+        color: ['#f90','#c9cb60','#f11','#ff9de3'],  // 字体颜色
+        duration: 1,       // 每个字母的动画展示时长 (seconds)
+        delay: [0, 0.1],  // 每个字母间的动画延时
+        fade: 0.5,         // 渐显效果的时长(seconds)
+        easing: d3_ease.easeCubicInOut.ease,   // 缓冲动画效果
+        individualDelays: false     // 默认false，如果设置成false，则动画效果会从左到右过度展示，如果是true，字母动画效果是同步展示
+    };
+    var myText = new Letters(el, options);
+    myText.show();
 </script>
 
 <div style="
@@ -72,54 +75,53 @@ top:50%;
 left:50%;
 margin-left:-250px;
 margin-top:-50px;">
-<p>
-<hr>
-<br>
-<a id="truman" href="bolg.html" class="cta">Good evening</a>
-<br><br>
-<hr>
-</p>
+    <p>
+    <hr>
+    <br>
+    <a id="truman" href="bolg.html" class="cta">Good evening</a>
+    <br><br>
+    <hr>
+    </p>
 </div>
 <script>
-var myTime = new Date();
-var current_hour = myTime.getHours();//小时数0-23
-function showTime_text(hour){
-if(hour >= 5 && hour < 12){
-document.getElementById('truman').innerText = 'Good morning';
-}
-else if(hour >=12 && hour < 18){
-document.getElementById('truman').innerText = 'Good afternoon';
-}
-else if(hour>=18 && hour<23){
-document.getElementById('truman').innerText = 'Good evening';
-}
-else{
-document.getElementById('truman').innerText = 'Good night';
-}
-}
-showTime_text(current_hour);
+    var myTime = new Date();
+    var current_hour = myTime.getHours();//小时数0-23
+    function showTime_text(hour){
+        if(hour >= 5 && hour < 12){
+            document.getElementById('truman').innerText = 'Good morning';
+        }
+        else if(hour >=12 && hour < 18){
+            document.getElementById('truman').innerText = 'Good afternoon';
+        }
+        else if(hour>=18 && hour<23){
+            document.getElementById('truman').innerText = 'Good evening';
+        }
+        else{
+            document.getElementById('truman').innerText = 'Good night';
+        }
+    }
+    showTime_text(current_hour);
 </script>
 
 <script type="text/javascript">
-var $cta = $('.cta');
-var createBtnsMarkup = function createBtnsMarkup() {
-	$cta.each(function (i, btn) {
-		var $t = $(btn);
-		var $btnText = $t.text();
-		var $splitText = $btnText.split("");
+    var $cta = $('.cta');
+    var createBtnsMarkup = function createBtnsMarkup() {
+        $cta.each(function (i, btn) {
+            var $t = $(btn);
+            var $btnText = $t.text();
+            var $splitText = $btnText.split("");
 
-		$t.html("").append("\n\t\t\t\t<span class=\"btn-text-parent\">\n\t\t\t\t\t<span class=\"wrap_text current-btn-text\"></span>\n\t\t\t\t\t<span class=\"wrap_text buildin-btn-text\"></span>\n\t\t\t\t</span>\n\t\t\t");
+            $t.html("").append("\n\t\t\t\t<span class=\"btn-text-parent\">\n\t\t\t\t\t<span class=\"wrap_text current-btn-text\"></span>\n\t\t\t\t\t<span class=\"wrap_text buildin-btn-text\"></span>\n\t\t\t\t</span>\n\t\t\t");
 
-		for (var _i = 0; _i < $splitText.length; _i++) {
-			$t.
-			find(".wrap_text").
-			append("<span class=\"btn-letter\">" + $splitText[_i] + "</span>");
-		}
-	});
-};
-window.onLoad = createBtnsMarkup();
+            for (var _i = 0; _i < $splitText.length; _i++) {
+                $t.
+                find(".wrap_text").
+                append("<span class=\"btn-letter\">" + $splitText[_i] + "</span>");
+            }
+        });
+    };
+    window.onLoad = createBtnsMarkup();
 
 </script>
-
 </body>
 </html>

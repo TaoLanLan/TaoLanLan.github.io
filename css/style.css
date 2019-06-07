@@ -6,11 +6,6 @@
   list-style: none;
 }
 
-body {
-text-align: center;
-  background: #032b39;
-  height: 100vh;
-}
 /*背景放大效果*/
 .drive,
 .shadows {
@@ -45,7 +40,7 @@ text-align: center;
 }
 
 .drive li:nth-child(1) {
-  animation-delay: 0;
+  animation-delay: 0s;
 }
 
 .drive li:nth-child(2) {
