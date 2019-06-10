@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba38e772-b9aa-4119-a448-c047f4602060" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/bolg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,7 +21,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
@@ -37,6 +36,28 @@
                 <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blog.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
+              <folding>
+                <element signature="n#header#0;n#html#0;n#!!top" />
+                <element signature="n#code#0;n#pre#0;n#figure#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/phrase.rnc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-965">
+              <caret line="115" column="10" selection-start-line="115" selection-start-column="4" selection-end-line="115" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -105,6 +126,7 @@
         <option value="$PROJECT_DIR$/../WayneDevMaze.github.io/index.html" />
         <option value="$PROJECT_DIR$/bolg.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/blog.html" />
       </list>
     </option>
   </component>
@@ -196,16 +218,15 @@
       <workItem from="1551604174107" duration="13610000" />
       <workItem from="1551664148605" duration="2780000" />
       <workItem from="1559868043234" duration="7614000" />
-      <workItem from="1560122299603" duration="1651000" />
+      <workItem from="1560122299603" duration="2760000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114765000" />
+    <option name="totallyTimeSpent" value="115874000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15132606" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -457,6 +478,24 @@
             <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-965">
+          <caret line="115" column="10" selection-start-line="115" selection-start-column="4" selection-end-line="115" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
+          <folding>
+            <element signature="n#header#0;n#html#0;n#!!top" />
+            <element signature="n#code#0;n#pre#0;n#figure#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
