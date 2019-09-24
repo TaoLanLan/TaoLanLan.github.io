@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		国庆见面倒计时
+	</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background: #E8D2DB;">
+  <div style="position:absolute;top:50%;"><h1 id="time"></h1></div>	
+	<!--设置时间-->
+	<!--计算时间-->
+	<script type="text/javascript">
+		var target_time=new Date("2019/10/03 12:00:00");
+		window.onload=function(){
+		//定时器每秒调用一次fnDate()
+		setInterval(function(){show(target_time)},1000);
+		}
+		function show(_data){
+			var myTime = new Date();
+			var current_data_seconds=myTime.getTime();
+			var target_data_sceonds=_data.getTime();
+			var delat_time_ms = target_data_sceonds - current_data_seconds;
+			var delat_time_s  = delat_time_ms/1000;
+			var delat_time_m  = delat_time_s/60;
+			var delat_time_h  = delat_time_m/60;
+			var delat_time_d  = delat_time_h/24;
+
+            document.getElementById('time').innerText = 
+            '国庆见面倒计时' + parseInt(delat_time_d) + '天' + parseInt(delat_time_h%24) + '小时' + parseInt(delat_time_m%60) + '分钟' + parseInt(delat_time_s%60) + '秒';
+		}
+	</script>
+</body>
+</html>
