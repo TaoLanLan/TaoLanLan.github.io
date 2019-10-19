@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>
-		国庆见面倒计时
+		【一周年】新年倒计时
 	</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,7 +11,7 @@
 	<!--设置时间-->
 	<!--计算时间-->
 	<script type="text/javascript">
-		var target_time=new Date("2019/10/03 12:00:00");
+		var target_time=new Date("2020/01/01 00:00:00");
 		window.onload=function(){
 		//定时器每秒调用一次fnDate()
 		setInterval(function(){show(target_time)},1000);
@@ -27,7 +27,7 @@
 			var delat_time_d  = delat_time_h/24;
 
             document.getElementById('time').innerText = 
-            '国庆见面倒计时' + parseInt(delat_time_d) + '天' + parseInt(delat_time_h%24) + '小时' + parseInt(delat_time_m%60) + '分钟' + parseInt(delat_time_s%60) + '秒';
+            '新年倒计时' + parseInt(delat_time_d) + '天' + parseInt(delat_time_h%24) + '小时' + parseInt(delat_time_m%60) + '分钟' + parseInt(delat_time_s%60) + '秒';
 		}
 	</script>
 </body>
