@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>网易云音乐下载功能</title>
+</head>
+<body>
+	<a href="http://music.163.com/song/media/outer/url?id=17141622.mp3" download="http://music.163.com/song/media/outer/url?id=17141622.mp3">下载该文件</a>
+<script type="text/javascript">
+
+function download(){
+	var p =params.join("&");
+	var a = document.createElement('a');
+	a.href = 'http://music.163.com/song/media/outer/url?id=17141622.mp3'+p;
+	a.target = '_blank';
+	a.id='exppub';
+	document.body.appendChild(a);
+	var alink = document.getElementById('exppub');
+	alink.click();
+	alink.parentNode.removeChild(a);
+}
+
+</script>
+</body>
+</html>
